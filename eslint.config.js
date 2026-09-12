@@ -10,7 +10,8 @@ module.exports = [
       'eslint.config.js',
       '.eslintrc.js',
       'node_modules/**',
-      'dist/**'
+      'dist/**',
+      'playwright-report/**',
     ]
   },
   js.configs.recommended,
@@ -76,7 +77,7 @@ module.exports = [
     }
   },
   {
-    files: ['tests/**/*.{js,jsx}'],
+    files: ['e2e-tests/**/*.{js,jsx}'],
     languageOptions: {
       ecmaVersion: 2018,
       sourceType: 'commonjs',
